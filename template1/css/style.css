@@ -238,7 +238,7 @@ nav img {
     width: 50%;
     padding: 0 25px;
     font-size: 1.1em;
-    margin: 25px 0;
+    margin: 50px 0;
 }
 
 .additional section {
@@ -269,6 +269,13 @@ nav img {
 
 .testimonials {
     text-align: center;
+    overflow: auto;
+}
+
+.testimonials div {
+    float: left;
+    width: 30%;
+    margin: 0 1.66%;
 }
 
 .testimonials p {
@@ -292,13 +299,13 @@ nav img {
     margin: 50px 15px 0;
     background: #ccc;
     padding: 10px;
-    box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.05);
     cursor: pointer;
 }
 
-.testimonials img:first-of-type {
+/* .testimonials img:first-of-type {
     background: #2980b9;
-}
+} */
 
 /* SIGN UP */
 section.sign-up {
@@ -383,6 +390,16 @@ footer input {
 
     .info .box:first-child {
         margin-top: 0;
+    }
+
+    .testimonials div {
+        float: none;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .testimonials img {
+        margin: 15px;
     }
 }
 
