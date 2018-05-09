@@ -18,6 +18,24 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Quicksand';
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Quicksand';
+    font-size: 2.5em;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 section:not(.hero) {
     margin: 0 auto;
     padding: 100px 0;
