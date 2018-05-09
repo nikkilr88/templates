@@ -44,6 +44,14 @@ h3 {
     text-align: center;
 }
 
+ h4 {
+     font-family: 'Open Sans';
+     font-size: 1.3em;
+     font-weight: 100;
+     margin: 0;
+     text-align: center;
+ }
+
 section:not(.hero) {
     margin: 0 auto;
     padding: 100px 0;
@@ -110,7 +118,7 @@ nav img {
     color: #fff;
     margin-bottom: 100px;
     background: linear-gradient(rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)),
-    url(https://images.unsplash.com/photo-1440335680360-79703e7032f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2343c1db5455ddcd6928ca252dc8198c&auto=format&fit=crop&w=750&q=80);
+    url('../img/morning.jpg');
     background-size: cover;
 }
 
@@ -160,11 +168,11 @@ nav img {
     color: #444;
 }
 
-.divider h3 {
+/* .divider h3 {
     font-family: 'Open Sans';
     font-size: 1.3em;
     font-weight: 100;
-}
+} */
 
 .divider hr {
     border-top: 2px solid #2980b9;
@@ -192,7 +200,7 @@ nav img {
     color: #666;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.03);
 }
 
 .info .box h4 {
@@ -214,13 +222,9 @@ nav img {
 }
 
 .info .box img {
-     /* position: absolute;
-     top: -42px;
-     right: 0;
-     left: 0;
-     margin: 0 auto; */
-     height: 100px;
-     width: 100px;
+     height: 75px;
+     width: 75px;
+     margin: 25px;
 }
 
 /*  */
@@ -240,6 +244,7 @@ nav img {
 .additional section {
     overflow: auto;
     padding: 0;
+    margin: 0 auto;
 }
 
 .additional .image {
@@ -255,6 +260,11 @@ nav img {
     width: 70%;
 }
 
+.additional button {
+    display: block;
+    margin: 15px 0;
+}
+
 /* TESTIMONIALS */
 
 .testimonials {
@@ -264,6 +274,7 @@ nav img {
 .testimonials p {
     margin: 0 auto;
     max-width: 550px;
+    width: 90%;
     font-size: 1.1em;
 }
 
@@ -289,6 +300,36 @@ nav img {
     background: #2980b9;
 }
 
+/* SIGN UP */
+section.sign-up {
+    padding: 100px 0;
+    text-align:center;
+    background:linear-gradient(rgba(41, 128, 185, 0.9),
+    rgba(41, 128, 185, 0.9)),
+    url('../img/plant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.sign-up p {
+    max-width: 600px;
+    width: 90%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+.sign-up input,
+.sign-up button {
+    padding: 10px;
+    border: 0;
+}
+
+.sign-up button {
+    background: #fff;
+    color: #333;
+}
 /* FOOTER */
 
 .float-right {
@@ -296,34 +337,15 @@ nav img {
 }
 
 footer {
-    background: #2b2b2b;
-    color: #fff;
-    padding: 50px 0 0;
-}
-
-footer h4 {
-    font-family: 'Quicksand';
-    font-size: 2em;
-    font-weight: 100;
-    margin: 0;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-footer p {
-    max-width: 600px;
-    width: 90%;
-    margin: 25px auto;
-    text-align: center;
+    color: #999;
 }
 
 footer ul {
     list-style: none;
-    margin: 50px 0 0;
+    margin: 0;
     padding: 0;
-    background: #2980b9;
+    background: #333;
     text-align: center;
-    color: #fff;
 }
 
 footer ul li {
@@ -341,15 +363,12 @@ footer input {
     border: none;
 }
 
-footer button {
-    padding: 5px 10px;
-    ;
-    border: none;
-    color: #fff;
-    background: #2980b9;
-}
-
 @media only screen and (max-width: 790px) {
+
+    nav ul li:not(.logo) {
+        display: none;
+    }
+    
     .info .box {
         position: relative;
         width: 95%;
@@ -379,15 +398,22 @@ footer button {
     }
     .additional div {
         float: none;
-        width: 95%;
+        width: 90%;
         padding: 0;
         font-size: 1.1em;
-        margin: 25px 0;
+        margin: 25px auto;
         text-align: center;
     }
 
-    .additional p {
+    .additional p,
+    .additional .text-left p {
         float: none;
+        max-width: 500px;
+        margin: 0 auto;
         width: 100%;
+    }
+
+    .additional button {
+        margin: 15px auto;
     }
 }
