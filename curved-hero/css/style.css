@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  background: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Quicksand';
+    font-size: 3.2em;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section:not(.hero) {
+    margin: 0 auto;
+    padding: 100px 0;
+    color: #333;
+}
+
+.btn-solid {
+  background: #fff;
+  color: #f48f42;
+  border: 2px solid transparent;
+}
+
+.btn-outline {
+  background: none;
+  color: #fff;
+  border: 2px solid white;
+}
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+  .hero .hero-text {
+    position: relative;
+    max-width: 750px;
+    width: 90%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+
+  .hero .hero-text h3 {
+      font-family: 'Open Sans';
+      font-size: 1.3em;
+      font-weight: 100;
+  }
+
+  .hero .hero-text button {
+    margin: 10px 5px;
+    padding: 10px 25px;
+    
+    border-radius: 20px;
+    transition: all 0.2s;
+    outline: none;
+  }
+
+  .hero .hero-text button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }  
+
+  .hero .fa-chevron-down {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background: #fff;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      border-radius: 50%;
+      bottom: -15px;
+      font-size: 1.2em;
+      color: #f48f42;
+      border: 2px solid #fc5a75;
+      z-index: 2;
+  }
+
+  .hero .bg-wrapper {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: -1;
+    background: #f5f5f5;
+  }
+
+  .hero .bg-wrapper .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .hero .bg-wrapper .bg:before {
+      content: '';
+      position: absolute;
+      top: -300px;
+      right: -500px;
+      left: -500px;
+      bottom: 0;
+          background: linear-gradient(to bottom, rgba(244, 143, 66, 0.9), rgba(252, 90, 117, 0.9)),
+          url(https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f34d31b7b293d187d4b134d6afcabba9&auto=format&fit=crop&w=751&q=80);
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+  }
+
+  /* DIVIDER */
+
+  .divider {
+      max-width: 700px;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      color: #444;
+  }
+
+  .divider h3 {
+      font-family: 'Open Sans';
+      font-size: 1.3em;
+      font-weight: 100;
+  }
+
+  .divider hr {
+      border-top: 2px solid #e74c3c;
+      width: 300px;
+  }
+
+  /* INFO SECTION */
+
+  .info {
+      overflow: auto;
+      width: 95%;
+      color: #333;
+      font-size: 1.1em;
+      text-align: center;
+      background: none;;
+  }
+
+  .info .box {
+      position: relative;
+      width: 30%;
+      float: left;
+      margin: 10px 1.66%;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 20px 5px rgba(0,0,0,0.1);
+  }
+
+  .info .box .icon {
+      position: absolute;
+      top: -23px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      background: #e74c3c;
+      color: #fff;
+      border-radius: 50%;
+      z-index: 3;
+  }
+
+  /*  */
+
+  .additional {
+      background: #e9e9e9;
+  }
+
+  .additional div {
+      float: left;
+      width: 50%;
+      padding: 0 25px;
+      font-size: 1.2em;
+      margin: 25px 0;
+  }
+
+  .additional section {
+      overflow: auto;
+      padding: 0;
+  }
+  .additional .image {
+      text-align: center;
+  }
+
+  .additional .text-left p {
+      float: right;
+  }
+
+  .additional img, .additional p {
+      width: 70%;
+  }
+
+
