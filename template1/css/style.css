@@ -182,19 +182,30 @@ nav img {
 /* INFO SECTION */
 
 .info {
-    overflow: auto;
+    /* overflow: auto; */
     width: 95%;
     color: #333;
     font-size: 1.1em;
     text-align: center;
     background: none;
-    ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .info .box {
-    position: relative;
+    /* position: relative;
     width: 30%;
-    float: left;
+    float: left;*/
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
     margin: 10px 1.66%;
     background: #fff;
     color: #666;
@@ -269,18 +280,38 @@ nav img {
 
 .testimonials {
     text-align: center;
-    overflow: auto;
+    width: 95%;
 }
 
-.testimonials div {
-    float: left;
-    width: 30%;
-    margin: 0 1.66%;
+.testimonials > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.testimonial {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -ms-flex-pack: distribute;
+     justify-content: space-around;
+     -webkit-box-flex: 1;
+     -ms-flex: 1 1 0px;
+     flex: 1 1 0;
 }
 
 .testimonials p {
-    margin: 0 auto;
-    max-width: 550px;
+    margin: 0 auto auto;
     width: 90%;
     font-size: 1.1em;
 }
@@ -301,11 +332,8 @@ nav img {
     padding: 10px;
     box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    align-self: center;
 }
-
-/* .testimonials img:first-of-type {
-    background: #2980b9;
-} */
 
 /* SIGN UP */
 section.sign-up {
@@ -375,27 +403,26 @@ footer input {
     nav ul li:not(.logo) {
         display: none;
     }
-    
+
+    .info {
+        flex-direction: column;
+    }
+
     .info .box {
-        position: relative;
-        width: 95%;
-        float: none;
-        margin: 0 auto;
-        margin-top: 75px;
-        background: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.1);
+        flex: none;
     }
 
     .info .box:first-child {
         margin-top: 0;
     }
 
-    .testimonials div {
-        float: none;
-        width: 90%;
-        margin: 50px auto;
+    .testimonials > div {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        flex: none;
+        margin: 20px auto;
     }
 
     .testimonials img {
