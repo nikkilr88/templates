@@ -14,6 +14,7 @@ button {
     padding: 15px 25px;
     border-radius: 5px;
     transition: all 0.2s;
+    -webkit-backface-visibility: hidden;
     outline: none;
 }
 
@@ -103,6 +104,25 @@ nav ul div {
 
 nav ul li {
     padding: 15px;
+    position: relative;
+}
+
+nav ul li:not(.logo):after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+nav ul li:not(.logo):hover:after {
+    transform: scaleX(1);
 }
  
 nav img {
@@ -188,23 +208,12 @@ nav img {
     font-size: 1.1em;
     text-align: center;
     background: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .info .box {
-    /* position: relative;
-    width: 30%;
-    float: left;*/
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
     flex: 1 1 0;
     margin: 10px 1.66%;
     background: #fff;
@@ -287,26 +296,17 @@ nav img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 .testimonial {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-     -ms-flex-direction: column;
      flex-direction: column;
-     -ms-flex-pack: distribute;
      justify-content: space-around;
-     -webkit-box-flex: 1;
-     -ms-flex: 1 1 0px;
      flex: 1 1 0;
 }
 
@@ -373,14 +373,14 @@ section.sign-up {
 
 footer {
     color: #999;
+    background: #333;
+    text-align: center;
 }
 
 footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: #333;
-    text-align: center;
 }
 
 footer ul li {
@@ -396,6 +396,12 @@ footer .sign-up {
 footer input {
     padding: 5px;
     border: none;
+}
+
+footer .attr a {
+    color: #2980b9;
+    text-decoration: none;
+    border-bottom: 1px dotted #2980b9;
 }
 
 @media only screen and (max-width: 790px) {
