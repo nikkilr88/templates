@@ -103,6 +103,18 @@ main .row-text {
     width: 500px;
 }
 
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #888;
+}
+
+footer a {
+    color: #ff4757;
+    text-decoration: none;
+    border-bottom: 1px dotted #ff4757;
+}
+
 @media only screen and (max-width: 1100px) {
     .header-comp {
         right: 5px;
