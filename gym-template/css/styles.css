@@ -1,0 +1,187 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background: whitesmoke;
+   color: #333;
+}
+
+section {
+  margin: 100px auto;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 15px 75px;
+   background: none;
+   z-index: 999;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #888;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   transition: all 0.2s ease-in;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li, 
+nav .logo {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+nav li.btn {
+  margin: 0 25px;
+  border: 1px solid #999;
+  border-radius: 45px;
+  padding: 10px 25px;
+}
+
+header {
+   position: relative;
+   height: 90vh;
+   background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+      url('../images/woman-box.jpg');
+   background-size: cover;
+   background-position: top;
+  
+}
+
+.header-content {
+   position: absolute;
+   top: 50%;
+   left: 100px;
+   transform: translateY(-50%);
+   color: #fff;
+   text-align: left;
+   max-width: 550px;
+   width: 95%;
+}
+
+header h1 {
+   font-size: 3.2em;
+   font-family: 'Lato';
+   letter-spacing: 5px;
+}
+
+header h3 {
+   font-size: 1.3em;
+   margin: 5px 0;
+   font-weight: 300;
+   width: 80%;
+   opacity: 0.75;
+}
+
+header button {
+   margin: 25px 0;
+   background: #e288c0; 
+   border: none;
+   padding: 15px 25px;
+   color: #fff;
+   border-radius: 30px;
+   font-size: 1.1em;
+}
+
+/* CLASS INFORMATION */
+
+.classes  {
+   position: relative;
+   top: -70px;
+   background: whitesmoke;
+   max-width: 900px;
+   width: 95%;
+   margin: 0 auto;
+   display: flex;
+   flex-flow: row wrap;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+}
+
+.classes .box {
+  position: relative;
+  padding: 30px;
+  flex: 1 1 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.classes .box .icon {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Box Images */
+/* https://www.freepik.com/free-photo/fit-workout-dumbbell-mus */
+.classes .box:nth-child(1) {
+   background: 
+      linear-gradient(rgba(190, 46, 221,0.5),rgba(190, 46, 221,0.5)),
+      url('https://image.freepik.com/free-photo/fit-workout-dumbbell-muscle-sport-muscular_1428-748.jpg');
+    background-size: cover;
+}
+
+.classes .box:nth-child(3) {
+   background: 
+      linear-gradient(rgba(190, 46, 221,0.5),rgba(190, 46, 221,0.5)),
+      url('https://image.freepik.com/free-photo/fit-workout-dumbbell-muscle-sport-muscular_1428-748.jpg');
+    background-size: cover;
+}
+
+.classes .box:nth-child(5) {
+   background: 
+      linear-gradient(rgba(190, 46, 221,0.5),rgba(190, 46, 221,0.5)),
+      url('https://image.freepik.com/free-photo/fit-workout-dumbbell-muscle-sport-muscular_1428-748.jpg');
+    background-size: cover;
+}
+
+.additional {
+  display: flex;
+  width: 80%;
+}
+
+.additional img {
+  height: 400px;
+}
+
+.additional .right {
+  line-height: 2;
+}
+
+.additional ul {
+  margin: 25px 0;
+  list-style: none;
+}
+
+.additional li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+  width: 80%;
+} 
+
+.additional .fas {
+  margin-right: 10px;
+  border: 1px solid #999;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  color: #999;
+}
