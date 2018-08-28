@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  color: #454545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-size: 2.9em;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 2.7em;
+  font-weight: 200;
+}
+
+h3 {
+  padding: 20px 0;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  position: relative;
+  color: #555;
+  overflow: auto;
+}
+
+header .text {
+  width: 40%;
+  padding: 0 50px;
+  margin-top: 145px;
+}
+
+header button {
+  margin: 0 50px;
+  border: none;
+  background: #2d9cdb;
+  color: #fff;
+  padding: 15px 55px;
+  border-radius: 5px;
+}
+.header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-comp {
+  position: absolute;
+  right: 65px;
+  top: 60px;
+  max-width: 550px;
+  width: 550px;
+}
+
+.header-comp.mobile {
+  display: none;
+}
+
+.arrow {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+
+/* MAIN */
+main {
+  margin: 100px auto;
+  width: 90%;
+  text-align: center;
+}
+
+main .row {
+  display: flex;
+}
+
+main .row > div {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+main .row-text {
+  width: 500px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: #888;
+}
+
+footer a {
+  color: #ff4757;
+  text-decoration: none;
+  border-bottom: 1px dotted #ff4757;
+}
+
+@media only screen and (max-width: 1100px) {
+  .header-comp {
+    right: 5px;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  /* HEADER */
+  header {
+    overflow: hidden;
+    text-align: center;
+    background: #3498db;
+    height: 90vh;
+  }
+  .header-bg,
+  .arrow {
+    display: none;
+  }
+  .header-comp.mobile {
+    display: block;
+  }
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header h3 {
+    font-size: 1em;
+  }
+
+  header .text {
+    max-width: 600px;
+    padding: 0;
+    margin: 50px auto auto;
+    width: 90%;
+    color: #fff;
+  }
+  header button {
+    background: #2980b9;
+  }
+  header .header-comp {
+    position: absolute;
+    bottom: -22px;
+    top: auto;
+    max-width: 400px;
+    width: 95%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  /* MAIN */
+  main .row {
+    flex-direction: column;
+  }
+
+  main .row > div {
+    margin: 25px auto;
+    width: 95%;
+  }
+
+  main .row .second-img {
+    order: 1;
+  }
+
+  main .row:nth-child(2) > div:nth-child(1) {
+    order: 2;
+  }
+}
